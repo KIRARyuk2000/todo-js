@@ -1,0 +1,42 @@
+div {
+    height:50px;
+    width: 50px;
+    margin: 50px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 30pt;
+
+}
+
+div:nth-child(1){
+    background-color: red; 
+}
+
+div:nth-child(2){
+    background-color: green;
+}
+
+div:nth-child(3):hover{
+    transform:rotate(180deg);
+    transition: 2s;
+}
+
+div:nth-child(4):hover{
+    transform:translateX(100px) rotateZ(360deg);
+    transition: 2s;
+}
+
+div:nth-child(5){
+    animation-name: wheel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheel {
+    0%{}
+    50%{
+        transform:translateX(100px) rotateZ(360deg);
+        }
+    100%{}
+}
